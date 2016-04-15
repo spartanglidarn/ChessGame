@@ -2,6 +2,8 @@ import java.util.ArrayList;
 
 public class Board {
 
+	ArrayList<String> removedPieces = new ArrayList<String>();
+	
 	public static ArrayList<String> drawBoard () {
 		int[] x = new int[8];
 		int[] y = new int[8];
@@ -30,10 +32,10 @@ public class Board {
 					break;
 				}
 				theBoard.add(letter + (j+1));
-			}
-		}
+			}//end nested for-loop
+		}//end nested for-loop
 		
 		return theBoard;
-	}
+	} // end drawBoard method
 	
 }
