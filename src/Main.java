@@ -1,3 +1,5 @@
+import Gui.GuiBoard;
+import Pieces.Board;
 import Pieces.Pawn;
 
 public class Main {
@@ -5,6 +7,7 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Pawn p = new Pawn();
+		GuiBoard GB = new GuiBoard();
 		
 		for (int x = 0; x < Board.drawBoard().size(); x ++){
 			if (x % 8 == 0){
@@ -21,6 +24,7 @@ public class Main {
 		p.move("a", 3);
 		
 		System.out.println(p.getPosition());
+		GB.drawGuiBoard();
 	}
 
 }
