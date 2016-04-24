@@ -34,16 +34,8 @@ public class GuiBoard extends JFrame{
 			}	
 		});
 		
-		String headerLabelText = "";
 		
-		for (int x = 0; x < Board.drawBoard().size(); x ++){
-			if (x % 8 == 0){
-				headerLabelText = headerLabelText + "<br>"; //trodde att denna skulle ge ett radbryt, men funkar ej. 
-			}
-			headerLabelText = headerLabelText + Board.drawBoard().get(x);
-		}
-		
-		headerLabel = new JLabel(headerLabelText, JLabel.CENTER);
+		headerLabel = new JLabel("this is a headerLabel", JLabel.CENTER);
 		//statusLabel = new JLabel("", JLabel.CENTER);
 		
 		controlPanel = new JPanel();
